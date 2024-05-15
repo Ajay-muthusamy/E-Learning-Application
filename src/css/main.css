@@ -1,0 +1,341 @@
+:root{
+    --primary-color:black;
+    --text-color:white;
+    --nav-top:rgb(0, 104, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.navbar-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+}
+
+.showcase {
+    margin: 25px 120px 0px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .stat{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/002/063/003/original/abstract-connecting-dots-and-lines-with-geometric-background-modern-technology-connection-science-polygonal-structure-background-illustration-vector.jpg);
+  padding: 20px;
+  background-size: cover;
+  opacity: 50%;
+} */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+.showcase .text h1{
+    font-size: 3.5rem;
+    line-height: 60px;
+}
+.single-line-input {
+    width: 300px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    outline: none; 
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.showcase .showcase-img img{
+    width: 100%;
+    margin-bottom: 80px;
+}
+.floating-image {
+    position: relative;
+    animation: floatAnimation 3s infinite alternate; 
+}
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-12px); 
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+ .home{
+  margin: 0 auto;
+ }
+  .home h1{
+    text-align: center;
+  }
+
+  .home-container img{
+    width: 60%;
+  }
+  .size h5{
+    font-size: 20px;
+  }
+  .size p{
+    font-size: 13px;
+  }
+  .size{
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .home-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10%;
+  }
+  .love-lesson h1{
+    font-size: 3rem;
+  }
+  .love-lesson p{
+    font-size: 20px;
+  }
+  .love-lesson{
+    margin-top: 20vh;
+    text-align: center;
+    background-color: rgb(255, 99, 175);
+    padding: 100px;
+  }
+  #happy-bg{
+    display: flex;
+    justify-content: center;
+  }
+  .happy-learn .happy-text{
+    padding: 20px;
+  }
+  .happy-learn {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+    gap: 3%;
+    border: 1px solid black;
+    width: 90%;
+    border-radius: 6px;
+  }
+  .happy-learn h1{
+    font-size: 40px;
+  }
+  .happy-text p{
+     padding-top: 15px;
+  }
+  .happy-btn{
+    padding-top: 18px;
+  }
+  .happy-btn button{
+    padding: 6px;
+    margin: 5px 5px;
+    border: none;
+    background: transparent;
+    border: 2px solid rgb(207, 206, 206);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .happy-btn button:hover{
+    background-color: rgb(205, 202, 202);
+  }
+  /* .happy-img img{
+    width: 75%;
+  } */
+.tut-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  text-align: center;
+}
+.txt{
+ text-align: center;
+ width: 30%;
+}
+.tut-btn{
+  margin-top: -30px;
+}
+.tutor ul{
+  padding-top: 2%;
+  list-style: none;
+  padding-bottom: 2%;
+}
+.tutor ul li{
+  padding-top: 2%;
+}
+.tutor button{
+  padding: 2% 5%;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(38, 38, 38);
+  color: white;
+  border-radius: 5px;
+
+}
+.tutor button:hover{
+  background-color: grey;
+  color: #ffffff;
+}
+/* .txt p{
+  
+} */
+  @media (max-width: 768px) {
+    .menu{
+        display: block;
+    }
+  }
+@media (max-width:500px)
+{
+    .navbar{
+        flex-direction: column ;
+    }
+    .navbar .container h1
+    {
+      margin-left: -15px;
+    }
+    ul{
+        flex-direction: column;
+        
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-auto-flow: column-reverse; 
+    }
+    .showcase .text{
+        text-align: center;
+    }
+    .menu{
+        position: relative;
+        top: -40vh;
+        left: 100%;
+    }
+    .home-container{
+      flex-direction: column;
+      padding-bottom: 30px;
+    }
+    .home h1{
+      font-size: 20px;
+      text-align: center;
+    }
+    .home{
+      padding-top: 30px;
+      text-align: center;
+    }
+    .love-lesson h1{
+      font-size: 27px;
+      text-align: center;
+    }
+    .love-lesson p{
+      padding-top:20px ;
+      font-size: 17px;
+    }
+    .love-lesson{
+      border-radius: 20px;
+      margin: 0px 10px 0px 10px;
+      padding: 15px;
+    }
+    .happy-learn {
+      flex-direction: column; 
+    }
+    .happy-img{
+      height: 232%;
+    }
+    .happy-btn button{
+      width: 100%;
+    }
+    .happy-text h1{
+      font-size: 25px;
+      text-align: center;
+    }
+    .happy-text p{
+      font-size: 15px;
+      text-align: center;
+    }
+    .tut-img
+    {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .txt h1{
+      text-align: center;
+    }
+    .tut-img img{
+      width: 90%;
+    }
+    .txt{
+      text-align: center;
+      width: 90%;
+      font-size: 1rem;
+     }
+}
